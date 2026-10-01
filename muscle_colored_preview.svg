@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 900 580" width="900" height="580">
+
+  <rect width="900" height="580" fill="#111820"/>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40,0 L0,0 L0,40" fill="none" stroke="#1a2535" stroke-width="0.4"/>
+  </pattern>
+  <rect width="900" height="580" fill="url(#grid)" opacity="0.4"/>
+
+  <defs>
+    <linearGradient id="legendGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e2a3a"/>
+      <stop offset="25%" stop-color="#1a3d6e"/>
+      <stop offset="60%" stop-color="#1a6ec8"/>
+      <stop offset="100%" stop-color="#4db8ff"/>
+    </linearGradient>
+    <filter id="figShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <text x="225" y="20" text-anchor="middle" fill="#4a7aaa" font-size="10" font-family="Arial,sans-serif" letter-spacing="3" font-weight="700">ANTERIOR</text>
+  <text x="675" y="20" text-anchor="middle" fill="#4a7aaa" font-size="10" font-family="Arial,sans-serif" letter-spacing="3" font-weight="700">POSTERIOR</text>
+  <line x1="450" y1="8" x2="450" y2="568" stroke="#1e3050" stroke-width="1.5"/>
+
+  <!-- ═══ ANTERIOR ═══ -->
+  <g filter="url(#figShadow)">
+
+  <!-- Silhouette base -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M225,28 C238,28 249,37 251,48 C253,59 250,68 246,74        C257,79 269,87 273,97 C277,107 275,119 271,129        C277,135 282,145 282,157 C282,169 278,181 272,189        C278,195 282,205 282,217 C282,227 279,237 274,245 L176,245        C171,237 168,227 168,217 C168,205 172,195 178,189        C172,181 168,169 168,157 C168,145 173,135 179,129        C175,119 173,107 177,97 C181,87 193,79 204,74        C200,68 197,59 199,48 C201,37 212,28 225,28 Z"/>
+
+  <!-- Legs base -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M176,245 C168,249 160,259 157,271 C154,283 156,297 160,309        C154,319 150,333 150,349 C150,367 155,383 162,393 L176,389        C170,379 166,365 166,349 C166,333 170,321 175,313        C172,301 171,287 174,275 C176,265 182,255 189,249        C196,255 202,265 204,275 C207,287 206,301 203,313        C208,321 212,333 212,349 C212,365 208,379 202,389 L216,393        C223,383 228,367 228,349 C228,333 224,319 218,309        C222,297 224,283 221,271 C218,259 210,249 202,245 Z"/>
+
+  <!-- Lower legs -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M163,395 C160,409 159,425 161,439 C163,451 168,461 174,465 L185,461        C180,455 177,445 176,431 C175,417 176,403 180,393 Z        M201,395 C204,409 205,425 203,439 C201,451 196,461 190,465 L179,461        C184,455 187,445 188,431 C189,417 188,403 184,393 Z"/>
+
+  <!-- Head -->
+  <ellipse cx="225" cy="43" rx="20" ry="23" fill="#253545" stroke="#162030" stroke-width="0.8"/>
+  <ellipse cx="219" cy="41" rx="2.5" ry="3.5" fill="#1c2c3c" opacity="0.7"/>
+  <ellipse cx="231" cy="41" rx="2.5" ry="3.5" fill="#1c2c3c" opacity="0.7"/>
+  <path d="M221,51 Q225,55 229,51" fill="none" stroke="#162030" stroke-width="0.8"/>
+  <rect x="220" y="63" width="10" height="12" rx="2" fill="#253545" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- TRAPEZIUS FRONT -->
+  <path id="斜方肌_front" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M220,73 C213,75 203,81 196,90 C193,94 192,100 195,103        L203,101 C204,97 207,93 212,90 C217,86 223,83 225,82 Z        M230,73 C237,75 247,81 254,90 C257,94 258,100 255,103        L247,101 C246,97 243,93 238,90 C233,86 227,83 225,82 Z"/>
+
+  <!-- Clavicle skin -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.6" d="M200,101 C195,99 190,99 188,103 C186,107 188,111 192,112 L200,108 Z"/>
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.6" d="M250,101 C255,99 260,99 262,103 C264,107 262,111 258,112 L250,108 Z"/>
+
+  <!-- ANTERIOR DELTOID -->
+  <path id="前三角肌_R" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M186,102 C181,109 178,121 180,133 C181,140 185,146 189,148        L198,143 C194,139 192,132 191,125 C190,116 192,108 196,103 Z"/>
+  <path id="前三角肌_L" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M264,102 C269,109 272,121 270,133 C269,140 265,146 261,148        L252,143 C256,139 258,132 259,125 C260,116 258,108 254,103 Z"/>
+
+  <!-- LATERAL DELTOID -->
+  <path id="側三角肌_R" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M177,133 C174,143 173,155 176,165 C178,172 182,177 186,179        L196,173 C192,169 190,162 189,154 C188,145 189,136 192,129 Z"/>
+  <path id="側三角肌_L" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M273,133 C276,143 277,155 274,165 C272,172 268,177 264,179        L254,173 C258,169 260,162 261,154 C262,145 261,136 258,129 Z"/>
+
+  <!-- PECTORALIS MAJOR -->
+  <path id="胸大肌_R" fill="#35b0ff" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M197,103 C192,111 189,123 189,137 C189,149 194,159 200,163        L215,162 C209,155 206,144 206,132 C206,118 210,107 215,103 Z"/>
+  <path id="胸大肌_L" fill="#35b0ff" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M253,103 C258,111 261,123 261,137 C261,149 256,159 250,163        L235,162 C241,155 244,144 244,132 C244,118 240,107 235,103 Z"/>
+  <line x1="194" y1="120" x2="215" y2="128" stroke="#0d1825" stroke-width="0.7" opacity="0.6"/>
+  <line x1="193" y1="132" x2="215" y2="138" stroke="#0d1825" stroke-width="0.7" opacity="0.6"/>
+  <line x1="256" y1="120" x2="235" y2="128" stroke="#0d1825" stroke-width="0.7" opacity="0.6"/>
+  <line x1="257" y1="132" x2="235" y2="138" stroke="#0d1825" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- PECTORALIS MINOR -->
+  <path id="胸小肌_R" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M200,110 C197,119 196,130 199,140 L209,138 C206,129 206,119 210,112 Z"/>
+  <path id="胸小肌_L" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M250,110 C253,119 254,130 251,140 L241,138 C244,129 244,119 240,112 Z"/>
+
+  <!-- Sternum -->
+  <rect x="213" y="103" width="24" height="60" rx="4" fill="#1c2c3c" stroke="#162030" stroke-width="0.6"/>
+  <line x1="225" y1="105" x2="225" y2="161" stroke="#162030" stroke-width="1.2" opacity="0.8"/>
+
+  <!-- BICEPS -->
+  <path id="肱二頭肌_R" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M174,165 C170,177 169,191 172,205 C173,213 177,219 182,222        L192,217 C188,212 186,204 185,196 C184,184 185,172 189,163 Z"/>
+  <path id="肱二頭肌_L" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M276,165 C280,177 281,191 278,205 C277,213 273,219 268,222        L258,217 C262,212 264,204 265,196 C266,184 265,172 261,163 Z"/>
+  <path d="M175,182 Q181,174 188,178" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.7"/>
+  <path d="M275,182 Q269,174 262,178" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.7"/>
+
+  <!-- TRICEPS FRONT -->
+  <path id="肱三頭肌_R_front" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M188,133 C193,147 194,163 192,177 C190,187 187,196 186,206        L177,203 C178,192 181,183 183,173 C185,159 185,143 183,131 Z"/>
+  <path id="肱三頭肌_L_front" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M262,133 C257,147 256,163 258,177 C260,187 263,196 264,206        L273,203 C272,192 269,183 267,173 C265,159 265,143 267,131 Z"/>
+
+  <!-- FOREARM ANTERIOR -->
+  <path id="前臂肌_R" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M172,222 C169,235 167,251 169,265 C170,274 174,281 177,284        L187,280 C185,274 183,266 182,256 C181,243 182,229 186,220 Z"/>
+  <path id="前臂肌_L" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M278,222 C281,235 283,251 281,265 C280,274 276,281 273,284        L263,280 C265,274 267,266 268,256 C269,243 268,229 264,220 Z"/>
+  <line x1="173" y1="237" x2="184" y2="242" stroke="#0d1825" stroke-width="0.7" opacity="0.5"/>
+  <line x1="172" y1="251" x2="183" y2="256" stroke="#0d1825" stroke-width="0.7" opacity="0.5"/>
+  <line x1="277" y1="237" x2="266" y2="242" stroke="#0d1825" stroke-width="0.7" opacity="0.5"/>
+  <line x1="278" y1="251" x2="267" y2="256" stroke="#0d1825" stroke-width="0.7" opacity="0.5"/>
+
+  <!-- Hands -->
+  <ellipse cx="180" cy="293" rx="9" ry="14" fill="#253545" stroke="#162030" stroke-width="0.6"/>
+  <ellipse cx="270" cy="293" rx="9" ry="14" fill="#253545" stroke="#162030" stroke-width="0.6"/>
+
+  <!-- Abdomen bg -->
+  <rect x="212" y="162" width="26" height="82" rx="5" fill="#1c2c3c" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- RECTUS ABDOMINIS -->
+  <rect id="腹直肌_1R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="213" y="164" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_1L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="226" y="164" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_2R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="213" y="183" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_2L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="226" y="183" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_3R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="213" y="202" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_3L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="226" y="202" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_4R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="213" y="221" width="11" height="16" rx="3"/>
+  <rect id="腹直肌_4L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" x="226" y="221" width="11" height="16" rx="3"/>
+  <line x1="225" y1="164" x2="225" y2="237" stroke="#162030" stroke-width="1.3"/>
+
+  <!-- OBLIQUES -->
+  <path id="腹斜肌_R" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M204,164 C200,178 198,194 199,210 C200,222 205,232 210,240        L218,236 C213,228 210,216 210,204 C209,190 211,175 215,164 Z"/>
+  <path id="腹斜肌_L" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M246,164 C250,178 252,194 251,210 C250,222 245,232 240,240        L232,236 C237,228 240,216 240,204 C241,190 239,175 235,164 Z"/>
+  <line x1="205" y1="178" x2="214" y2="173" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+  <line x1="204" y1="192" x2="214" y2="186" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+  <line x1="204" y1="206" x2="214" y2="200" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+  <line x1="245" y1="178" x2="236" y2="173" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+  <line x1="246" y1="192" x2="236" y2="186" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+  <line x1="246" y1="206" x2="236" y2="200" stroke="#0d1825" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- TRANSVERSE ABDOMINIS -->
+  <rect id="腹橫肌" fill="#23456b" stroke="#0a1520" stroke-width="0.9" x="202" y="240" width="46" height="10" rx="4"/>
+
+  <!-- Pelvis -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.8" d="M194,250 C189,255 187,265 189,275 L261,275 C263,265 261,255 256,250 Z"/>
+  <circle cx="197" cy="258" r="3.5" fill="#192839" stroke="#162030" stroke-width="0.5"/>
+  <circle cx="253" cy="258" r="3.5" fill="#192839" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- HIP FLEXORS -->
+  <path id="髖屈肌_R" fill="#23456b" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M197,254 C193,263 192,275 194,287 L209,285 C207,274 207,263 211,256 Z"/>
+  <path id="髖屈肌_L" fill="#23456b" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M253,254 C257,263 258,275 256,287 L241,285 C243,274 243,263 239,256 Z"/>
+
+  <!-- GLUTE MED FRONT -->
+  <path id="臀中肌_front_R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M186,273 C182,283 181,295 183,307 L197,305 C195,295 195,283 199,275 Z"/>
+  <path id="臀中肌_front_L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M264,273 C268,283 269,295 267,307 L253,305 C255,295 255,283 251,275 Z"/>
+
+  <!-- QUADRICEPS -->
+  <path id="股四頭肌_R" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M193,307 C189,321 187,339 189,357 C191,371 197,385 205,393 L219,389        C212,379 208,365 207,349 C205,331 207,315 213,305 Z"/>
+  <path id="股四頭肌_L" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M257,307 C261,321 263,339 261,357 C259,371 253,385 245,393 L231,389        C238,379 242,365 243,349 C245,331 243,315 237,305 Z"/>
+  <path d="M206,325 C211,332 219,336 225,337 C231,336 239,332 244,325" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.6"/>
+  <path d="M206,345 C211,352 219,356 225,357 C231,356 239,352 244,345" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.6"/>
+  <path d="M208,370 Q214,378 220,382" fill="none" stroke="#0d1825" stroke-width="1.1" opacity="0.7"/>
+  <path d="M242,370 Q236,378 230,382" fill="none" stroke="#0d1825" stroke-width="1.1" opacity="0.7"/>
+
+  <!-- Inner thigh -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.5" d="M213,305 C217,311 221,315 225,316 C229,315 233,311 237,305        C233,297 229,293 225,292 C221,293 217,297 213,305 Z"/>
+
+  <!-- Knees -->
+  <ellipse cx="205" cy="396" rx="14" ry="10" fill="#253545" stroke="#162030" stroke-width="0.7"/>
+  <ellipse cx="245" cy="396" rx="14" ry="10" fill="#253545" stroke="#162030" stroke-width="0.7"/>
+  <ellipse cx="205" cy="394" rx="8" ry="6" fill="#1c2c3c" stroke="#162030" stroke-width="0.5"/>
+  <ellipse cx="245" cy="394" rx="8" ry="6" fill="#1c2c3c" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- SHIN / CALF FRONT -->
+  <path id="小腿肌_front_R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M190,408 C187,424 186,442 188,458 C190,469 196,479 202,483        L214,479 C209,473 206,461 205,447 C203,431 204,415 208,403 Z"/>
+  <path id="小腿肌_front_L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M260,408 C263,424 264,442 262,458 C260,469 254,479 248,483        L236,479 C241,473 244,461 245,447 C247,431 246,415 242,403 Z"/>
+  <line x1="205" y1="408" x2="206" y2="480" stroke="#0d1825" stroke-width="1.1" opacity="0.6"/>
+  <line x1="245" y1="408" x2="244" y2="480" stroke="#0d1825" stroke-width="1.1" opacity="0.6"/>
+
+  <!-- Feet -->
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M194,485 C190,487 188,494 190,498 L218,498 C220,494 218,487 214,485 Z"/>
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M236,485 C232,487 230,494 232,498 L260,498 C262,494 260,487 256,485 Z"/>
+
+  </g>
+
+  <!-- Anterior labels -->
+  <g fill="#304a62" font-size="7" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="192" y="88">TRAP</text>
+    <text x="179" y="122">DELT</text>
+    <text x="198" y="145">PEC</text>
+    <text x="170" y="194">BI</text>
+    <text x="167" y="253">FORE</text>
+    <text x="225" y="196">ABS</text>
+    <text x="191" y="345">QUAD</text>
+    <text x="187" y="448">SHIN</text>
+  </g>
+
+  <!-- ═══ POSTERIOR ═══ -->
+  <g filter="url(#figShadow)">
+
+  <!-- Silhouette back -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M675,28 C688,28 699,37 701,48 C703,59 700,68 696,74        C707,79 719,87 723,97 C727,107 725,119 721,129        C727,135 732,145 732,157 C732,169 728,181 722,189        C728,195 732,205 732,217 C732,227 729,237 724,245 L626,245        C621,237 618,227 618,217 C618,205 622,195 628,189        C622,181 618,169 618,157 C618,145 623,135 629,129        C625,119 623,107 627,97 C631,87 643,79 654,74        C650,68 647,59 649,48 C651,37 662,28 675,28 Z"/>
+
+  <!-- Legs back -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M626,245 C618,249 610,259 607,271 C604,283 606,297 610,309        C604,319 600,333 600,349 C600,367 605,383 612,393 L626,389        C620,379 616,365 616,349 C616,333 620,321 625,313        C622,301 621,287 624,275 C626,265 632,255 639,249        C646,255 652,265 654,275 C657,287 656,301 653,313        C658,321 662,333 662,349 C662,365 658,379 652,389 L666,393        C673,383 678,367 678,349 C678,333 674,319 668,309        C672,297 674,283 671,271 C668,259 660,249 652,245 Z"/>
+
+  <!-- Lower legs back -->
+  <path fill="#1e2d40" stroke="#162030" stroke-width="0.8" d="M613,395 C610,411 609,429 611,445 C613,457 618,467 624,471 L635,467        C630,461 627,449 626,435 C625,419 626,403 630,393 Z        M651,395 C654,411 655,429 653,445 C651,457 646,467 640,471 L629,467        C634,461 637,449 638,435 C639,419 638,403 634,393 Z"/>
+
+  <!-- Head back -->
+  <ellipse cx="675" cy="43" rx="20" ry="23" fill="#253545" stroke="#162030" stroke-width="0.8"/>
+  <path d="M660,35 Q675,29 690,35" fill="none" stroke="#162030" stroke-width="1" opacity="0.5"/>
+  <rect x="670" y="63" width="10" height="12" rx="2" fill="#253545" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- TRAPEZIUS UPPER -->
+  <path id="斜方肌_back" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M657,72 C647,78 636,89 632,102 C641,102 650,100 659,97        C663,89 668,81 671,74 Z        M693,72 C703,78 714,89 718,102 C709,102 700,100 691,97        C687,89 682,81 679,74 Z        M659,97 C663,101 668,104 671,106 L679,106 C682,104 687,101 691,97        C685,95 679,93 675,93 C671,93 665,95 659,97 Z"/>
+  <line x1="638" y1="114" x2="658" y2="120" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+  <line x1="712" y1="114" x2="692" y2="120" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- TRAPEZIUS LOWER -->
+  <path id="斜方肌_lower" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M632,102 C628,118 629,136 633,148 L657,141 C653,129 652,115 656,104 Z        M718,102 C722,118 721,136 717,148 L693,141 C697,129 698,115 694,104 Z        M657,141 C661,148 668,152 675,154 C682,152 689,148 693,141        C687,137 681,135 675,135 C669,135 663,137 657,141 Z"/>
+
+  <!-- Shoulder back -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.5" d="M630,102 C624,107 620,116 621,126 L630,124 C630,116 633,109 637,105 Z"/>
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.5" d="M720,102 C726,107 730,116 729,126 L720,124 C720,116 717,109 713,105 Z"/>
+
+  <!-- POSTERIOR DELTOID -->
+  <path id="後三角肌_R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M619,124 C615,135 614,149 617,161 L630,157 C628,147 628,135 632,126 Z"/>
+  <path id="後三角肌_L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M731,124 C735,135 736,149 733,161 L720,157 C722,147 722,135 718,126 Z"/>
+
+  <!-- RHOMBOIDS -->
+  <path id="菱形肌" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M659,106 C657,115 656,127 658,139 C660,146 664,150 669,152        L675,154 L681,152 C686,150 690,146 692,139 C694,127 693,115 691,106        C685,110 680,112 675,112 C670,112 665,110 659,106 Z"/>
+  <line x1="661" y1="116" x2="689" y2="116" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+  <line x1="660" y1="128" x2="690" y2="128" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- LATISSIMUS DORSI -->
+  <path id="背闊肌_R" fill="#329ee6" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M633,148 C629,167 627,187 629,207 C631,223 638,237 647,245        L661,239 C653,229 649,215 648,199 C646,181 647,161 652,148 Z"/>
+  <path id="背闊肌_L" fill="#329ee6" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M717,148 C721,167 723,187 721,207 C719,223 712,237 703,245        L689,239 C697,229 701,215 702,199 C704,181 703,161 698,148 Z"/>
+  <path d="M635,166 C644,175 654,179 661,181" fill="none" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+  <path d="M635,182 C644,189 654,193 661,195" fill="none" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+  <path d="M715,166 C706,175 696,179 689,181" fill="none" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+  <path d="M715,182 C706,189 696,193 689,195" fill="none" stroke="#0d1825" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Spine -->
+  <rect x="671" y="106" width="8" height="166" rx="3" fill="#192839" stroke="#162030" stroke-width="0.6"/>
+  <circle cx="675" cy="118" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="130" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="142" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="154" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="166" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="178" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="190" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="202" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="214" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="226" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="238" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="250" r="1.8" fill="#1e3048"/>
+  <circle cx="675" cy="262" r="1.8" fill="#1e3048"/>
+
+  <!-- ERECTOR SPINAE -->
+  <path id="豎脊肌_R" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M656,154 C654,170 653,190 655,208 C657,222 662,234 668,240        L675,238 C669,230 667,218 666,204 C664,186 664,166 668,152 Z"/>
+  <path id="豎脊肌_L" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M694,154 C696,170 697,190 695,208 C693,222 688,234 682,240        L675,238 C681,230 683,218 684,204 C686,186 686,166 682,152 Z"/>
+
+  <!-- TRICEPS BACK -->
+  <path id="肱三頭肌_R" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M617,161 C613,175 612,191 614,207 C616,219 621,229 627,235        L637,231 C632,223 629,212 628,199 C627,185 628,171 633,160 Z"/>
+  <path id="肱三頭肌_L" fill="#2f8ccd" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M733,161 C737,175 738,191 736,207 C734,219 729,229 723,235        L713,231 C718,223 721,212 722,199 C723,185 722,171 717,160 Z"/>
+  <path d="M619,181 Q624,174 630,177" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.7"/>
+  <path d="M731,181 Q726,174 720,177" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.7"/>
+
+  <!-- FOREARM POSTERIOR -->
+  <path id="前臂肌_back_R" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M614,235 C611,249 610,265 612,279 C613,289 617,296 621,299        L631,295 C629,289 628,280 627,270 C626,256 627,240 631,234 Z"/>
+  <path id="前臂肌_back_L" fill="#265783" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M736,235 C739,249 740,265 738,279 C737,289 733,296 729,299        L719,295 C721,289 722,280 723,270 C724,256 723,240 719,234 Z"/>
+
+  <!-- Hands back -->
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M612,301 Q612,317 620,317 Q628,317 628,301 Z"/>
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M722,301 Q722,317 730,317 Q738,317 738,301 Z"/>
+
+  <!-- Lower back / pelvis -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.8" d="M647,245 C641,251 638,261 639,271 L711,271 C712,261 709,251 703,245 Z"/>
+  <path fill="#192839" stroke="#162030" stroke-width="0.5" d="M667,252 C665,258 664,266 666,272 L684,272 C686,266 685,258 683,252 Z"/>
+
+  <!-- GLUTE MED BACK -->
+  <path id="臀中肌_back_R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M637,269 C633,281 632,295 634,309 L650,307 C648,295 648,281 652,271 Z"/>
+  <path id="臀中肌_back_L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M713,269 C717,281 718,295 716,309 L700,307 C702,295 702,281 698,271 Z"/>
+
+  <!-- GLUTEUS MAXIMUS -->
+  <path id="臀大肌_R" fill="#329ee6" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M634,309 C630,325 630,345 633,361 C636,375 644,389 654,397        L667,393 C658,383 653,369 651,353 C649,337 651,319 657,307 Z"/>
+  <path id="臀大肌_L" fill="#329ee6" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M716,309 C720,325 720,345 717,361 C714,375 706,389 696,397        L683,393 C692,383 697,369 699,353 C701,337 699,319 693,307 Z"/>
+  <path d="M636,326 C645,334 658,338 672,338" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.5"/>
+  <path d="M714,326 C705,334 692,338 678,338" fill="none" stroke="#0d1825" stroke-width="1" opacity="0.5"/>
+  <!-- Glute cleft skin -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.5" d="M657,307 C661,312 667,316 675,318 C683,316 689,312 693,307        C689,299 683,295 675,293 C667,295 661,299 657,307 Z"/>
+  <line x1="675" y1="295" x2="675" y2="397" stroke="#162030" stroke-width="1.3" opacity="0.7"/>
+
+  <!-- HAMSTRINGS -->
+  <path id="腿後肌_R" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M651,397 C647,415 645,435 647,455 C649,469 655,483 664,491        L675,487 C667,477 663,463 661,447 C659,429 661,411 666,395 Z"/>
+  <path id="腿後肌_L" fill="#2c7ab5" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M699,397 C703,415 705,435 703,455 C701,469 695,483 686,491        L675,487 C683,477 687,463 689,447 C691,429 689,411 684,395 Z"/>
+  <path d="M652,417 C657,424 663,428 671,430" fill="none" stroke="#0d1825" stroke-width="0.9" opacity="0.5"/>
+  <path d="M698,417 C693,424 687,428 679,430" fill="none" stroke="#0d1825" stroke-width="0.9" opacity="0.5"/>
+  <!-- Inner ham -->
+  <path fill="#1c2c3c" stroke="#162030" stroke-width="0.5" d="M666,395 C669,401 672,404 675,405 C678,404 681,401 684,395        C681,387 678,383 675,382 C672,383 669,387 666,395 Z"/>
+
+  <!-- Knees back -->
+  <ellipse cx="657" cy="494" rx="13" ry="10" fill="#253545" stroke="#162030" stroke-width="0.7"/>
+  <ellipse cx="693" cy="494" rx="13" ry="10" fill="#253545" stroke="#162030" stroke-width="0.7"/>
+  <path d="M646,495 Q657,489 668,495" fill="none" stroke="#162030" stroke-width="1" opacity="0.6"/>
+  <path d="M682,495 Q693,489 704,495" fill="none" stroke="#162030" stroke-width="1" opacity="0.6"/>
+
+  <!-- GASTROCNEMIUS / CALF BACK -->
+  <path id="小腿肌_back_R" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M645,506 C641,524 641,544 645,560 C647,568 653,568 657,560        C654,544 653,528 655,514 Z        M657,506 C661,514 663,530 661,546 C659,558 657,566 660,570 L667,566        C669,556 669,538 667,522 C665,510 662,500 658,496 Z"/>
+  <path id="小腿肌_back_L" fill="#29699c" stroke="#0a1520" stroke-width="0.9" stroke-linejoin="round" d="M705,506 C709,524 709,544 705,560 C703,568 697,568 693,560        C696,544 697,528 695,514 Z        M693,506 C689,514 687,530 689,546 C691,558 693,566 690,570 L683,566        C681,556 681,538 683,522 C685,510 688,500 692,496 Z"/>
+  <!-- Calf medial/lateral separation -->
+  <line x1="657" y1="506" x2="658" y2="562" stroke="#0d1825" stroke-width="1.1" opacity="0.7"/>
+  <line x1="693" y1="506" x2="692" y2="562" stroke="#0d1825" stroke-width="1.1" opacity="0.7"/>
+
+  <!-- Achilles -->
+  <rect x="669" y="560" width="12" height="18" rx="3" fill="#192839" stroke="#162030" stroke-width="0.5"/>
+
+  <!-- Feet back -->
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M641,570 C637,572 635,579 637,583 L665,583 C667,579 665,572 661,570 Z"/>
+  <path fill="#253545" stroke="#162030" stroke-width="0.6" d="M629,570 C625,572 623,579 625,583 L653,583 C655,579 653,572 649,570 Z"/>
+
+  </g>
+
+  <!-- Posterior labels -->
+  <g fill="#304a62" font-size="7" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="646" y="89">TRAP</text>
+    <text x="619" y="138">DELT</text>
+    <text x="637" y="197">LAT</text>
+    <text x="675" y="128">RHOM</text>
+    <text x="659" y="197">ES</text>
+    <text x="616" y="196">TRI</text>
+    <text x="613" y="261">FORE</text>
+    <text x="640" y="348">GLUTE</text>
+    <text x="646" y="448">HAM</text>
+    <text x="642" y="534">CALF</text>
+  </g>
+
+  <!-- ═══ LEGEND ═══ -->
+  <g transform="translate(285,554)">
+    <rect x="-10" y="-16" width="350" height="38" rx="8" fill="#141c28" stroke="#1e3050" stroke-width="1"/>
+    <text x="165" y="-4" text-anchor="middle" fill="#2a4060" font-size="7" font-family="Arial,sans-serif" letter-spacing="2.5" font-weight="700">WEEKLY INTENSITY</text>
+    <rect x="0" y="0" width="330" height="12" rx="6" fill="url(#legendGrad)"/>
+    <g fill="#2a4060" font-size="7" font-family="Arial,sans-serif">
+      <text x="0" y="24" text-anchor="start">None</text>
+      <text x="110" y="24" text-anchor="middle">Light</text>
+      <text x="220" y="24" text-anchor="middle">Moderate</text>
+      <text x="330" y="24" text-anchor="end">Peak</text>
+    </g>
+  </g>
+
+  <text id="heatmap_title" x="450" y="550" text-anchor="middle" fill="#1e3045" font-size="8" font-family="Arial,sans-serif" font-style="italic">Muscle Intensity — Week of Feb 27, 2026</text>
+
+</svg>
